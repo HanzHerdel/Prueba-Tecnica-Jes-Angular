@@ -1,0 +1,17 @@
+<div class="formContainer" (click)="stopPropagation($event)">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">    
+        <div class="cardCliete" >
+            <div class="cardHeader">Agregar Fiscalia</div>
+            <div class="formContenedor" >
+                <div *ngFor="let campo of campos" class="campos" >
+                    <label class="lbl" >{{campo.etiqueta}}</label>
+                    <input [required]="campo.requerido" [formControlName]="campo.nombreCampo" class="input" [formControlName]="campo.nombreCampo"  type="text"/>
+                    <div  class="errorLabel" *ngIf="!this.form.controls[campo.nombreCampo].valid && this.form.controls[campo.nombreCampo].touched">{{campo.etiquetaErrRequerido}}</div>
+                </div>
+
+            </div>
+        </div>
+        <button type="submit" class="Button">{{botonLabel}}</button>
+    </form >
+</div>
+<!--  *ngIf="agregarClienteModal" [@animacionModal]  -->

@@ -1,0 +1,51 @@
+
+.cardHeader{
+    font-size: 120%;
+    text-align: center;
+    padding-bottom: 5px;
+    color: white;
+    background: #1d670f;
+    padding: 10px;
+    border-radius: 5px; 
+  }
+.formContainer{
+    text-align: center;
+    background: #2b9c16ba;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.formContenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.campos{
+    margin: 12px 5px;
+    height: 25px;
+    background: #1d670f;
+    padding: 5px;
+    color: white;
+    border-radius: 6px;
+}
+.input{
+    border-radius: 4px;
+    height: 20px;
+}
+.lbl{
+    padding: 5px;
+}
+.errorLabel{
+    margin-top: 4px;
+    color: #ffffff;
+    background: #ab001d;
+}
+.Button{
+    background: #5454f3;
+    border: 0;
+    width: 95px;
+    height: 50px;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+}
